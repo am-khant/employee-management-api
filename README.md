@@ -69,6 +69,20 @@ All error responses follow a consistent `ApiError` structure.
 3. Access API at:
    http://localhost:8080
    
+---
+
+## API Documentation
+
+Interactive API documentation is available via Swagger UI.
+
+After running the application, access:
+
+http://localhost:8080/swagger-ui/index.html
+
+The documentation allows testing endpoints directly from the browser and provides request/response schemas.
+
+---
+   
 ## Future Improvements
 
 - Unit testing with JUnit & Mockito
