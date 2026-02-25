@@ -7,7 +7,15 @@ public class DepartmentCreateRequest {
 	@NotBlank
 	private String name;
 
+	public DepartmentCreateRequest() {
+	}
+
 	public String getName() {
 		return name;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }

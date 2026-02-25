@@ -17,7 +17,6 @@ import com.reboot.employeeapi.dto.EmployeeCreateRequest;
 import com.reboot.employeeapi.dto.EmployeeResponse;
 import com.reboot.employeeapi.dto.EmployeeUpdateRequest;
 import com.reboot.employeeapi.service.EmployeeService;
-import com.reboot.employeeapi.service.impl.EmployeeServiceImpl;
 
 import jakarta.validation.Valid;
 
@@ -27,7 +26,7 @@ public class EmployeeController {
 
 	private final EmployeeService service;
 
-	public EmployeeController(EmployeeServiceImpl service) {
+	public EmployeeController(EmployeeService service) {
 		this.service = service;
 	}
 
@@ -39,7 +38,7 @@ public class EmployeeController {
 	@PutMapping("/{id}")
 	public ResponseEntity<EmployeeResponse> updateEmployee(@PathVariable Long id,
 			@Valid @RequestBody EmployeeUpdateRequest request) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(service.update(id, request));
+		return ResponseEntity.ok(service.update(id, request));
 	}
 
 	@DeleteMapping("/{id}")
@@ -50,7 +49,7 @@ public class EmployeeController {
 
 	@GetMapping("/{id}")
 	public ResponseEntity<EmployeeResponse> getById(@PathVariable Long id) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(service.getById(id));
+		return ResponseEntity.ok(service.getById(id));
 	}
 
 	@GetMapping

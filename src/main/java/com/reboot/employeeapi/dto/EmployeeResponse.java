@@ -29,4 +29,20 @@ public class EmployeeResponse {
 	public String getDepartment() {
 		return department;
 	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
 }
