@@ -4,7 +4,7 @@ A production-style REST API built with Spring Boot to manage employees and depar
 
 This project demonstrates backend engineering principles including layered architecture, structured exception handling, validation, logging discipline, and RESTful best practices.  
 
-Developed as part of structured backend practice (Bucket 3 phase).
+Developed as part of structured backend practice.
 
 ---
 
